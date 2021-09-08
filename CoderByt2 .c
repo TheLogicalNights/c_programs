@@ -4,10 +4,8 @@
 void CodelandUsernameValidation(char * str) {
   int i = 0;
   // code goes here  
-  while(str[i] != '\0')
-  {
-    i++;
-  }
+  
+  i = strlen(str);
 
   if((i >= 4 )&&(i <= 25)&&(str[0] >= 'A')&&(str[0]<='z')&&(str[i-1]!='_')&&(str[0]!='_'))
   {
